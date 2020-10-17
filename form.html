@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    
+    <body>
+        <form method="post" action="submit.html">
+            <header>
+                <h1>Carrauntoohil Guesthouse - Booking Form</h1>
+                <nav>
+                    <ul>
+                        <link rel="stylesheet" type="text/css" href="menu_style.css" />
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="todo.html">What To Do</a></li>
+                        <li style="float:right"><a class="active" href="form.html">Book Now</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <hr>
+            <pre>
+                <fieldset style="background-color:#ffffb3">
+                    <legend> <b><u>Personal Details:</u></b> </legend>
+                    <b>First Name<span style="color:red">*</span>:</b>
+                    <input type="text" name="first_name" placeholder="First name" required><br>
+                    <b>Last Name<span style="color:red">*</span>:</b>
+                    <input type="text" name="last_name" placeholder="Last name" required><br>
+                    <b>Phone<span style="color:red">*</span>:</b>
+                    <input type="tel" name="phone" placeholder="Phone number" required><br>
+                    <b>Email<span style="color:red">*</span>:</b>
+                    <input type="email" name="email" placeholder="Email" required><br>
+                </fieldset>
+                <br>
+                <fieldset style="background-color:#ffffb3">
+                    <legend> <b><u>Booking Details:</u></b> </legend>
+                    <b>Select room(s) for booking<span style="color:red">*</span>:</b>
+                    <input type="checkbox" name="room" value="Master Double"> Master Double Room
+                    <input type="checkbox" name="room" value="Twin Single"> Twin Single Room
+                    <input type="checkbox" name="room" value="Double and Single"> Double and Single Room
+                    <br>
+                    <b>Arrival Date<span style="color:red">*</span>:</b>
+                    <input type="date" required>
+                    <b>Departure Date<span style="color:red">*</span>:</b>
+                    <input type="date" required>
+                    <br>
+                    
+                    <b>Include Lunch and Dinner?<span style="color:red">*</span></b>(additional cost of €30)
+                    <input type="radio" name="othermeals" value="Yes"> Yes   <input type="radio" name="othermeals" value="No" checked> No
+                    <br>
+                    <b>Additional Comments:</b>
+                    <textarea name="comments" rows="6" cols="30" placeholder="Type here"></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="Place Booking">  <input type="reset" value="Clear Form">
+                <input type="hidden" name="form_name" value="Booking Form">
+                <input type="hidden" name="mail_to" value="116301371@umail.ucc.ie">
+            </pre>
+        </form>
+    </body>
+</html>
